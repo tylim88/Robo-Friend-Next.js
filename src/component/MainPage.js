@@ -4,7 +4,6 @@ import SearchBox from '../component/SearchBox';
 import Scroll from '../component/Scroll';
 import ErrorBoundry from '../component/Boundary';
 import Header from '../component/Header';
-import Head from 'next/head';
 
 class MainPage extends Component {
   componentDidMount() {
@@ -24,9 +23,6 @@ class MainPage extends Component {
 
     return (
       <div className="tc">
-        <Head>
-          <link href="/static/MainPage.css" rel="stylesheet" />
-        </Head>
         <Header />
         <SearchBox searchChange={onSearchChange} />
 
